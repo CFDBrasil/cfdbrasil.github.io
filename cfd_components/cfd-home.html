@@ -2,12 +2,15 @@
 <dom-module id="cfd-home">
     <template>
         <style is="custom-style">
+            :host{
+              margin-bottom: 40px;
+            }
 
             .card{
-                margin: 20px 10px 20px 10px;
+                margin: 10px;
                 text-align: left;
                 background-color: white;
-                padding: 30px 50px 40px 50px;
+                padding: 30px;
             }
 
             paper-material:hover{
@@ -47,6 +50,10 @@
             p{
                 text-align: justify;
             }
+            p.paper-font-body1{
+              margin-top:5px;
+              margin-bottom: 5px;
+            }
 
         </style>
 
@@ -60,52 +67,7 @@
               para desenvolver nosso projeto.
             </p>
         </paper-material>
-        <paper-material animated="true" elevation="1" class="card">
-            <div class="paper-font-display1">
-              Roteiro
-            </div>
-            <p class="paper-font-title">
-              Fundamentos
-            </p>
-            <ul class="paper-font-body1">
-              <li>Programação científica com Python</li>
-              <li>Sistemas de controle de versão</li>
-              <li>Desenvolvimento orientado por testes TDD</li>
-            </ul>
-            <p class="paper-font-title">
-              Métodos Numéricos
-            </p>
-            <ul class="paper-font-body1">
-              <li></li>
-            </ul>
-            <p class="paper-font-title">
-              Transferência de Calor
-            </p>
-            <ul class="paper-font-body1">
-              <li></li>
-            </ul>
-            <p class="paper-font-title">
-              Termodinâmica
-            </p>
-            <ul class="paper-font-body1">
-              <li></li>
-            </ul>
-            <p class="paper-font-title">
-              Dinâmica dos Fluidos
-            </p>
-            <ul class="paper-font-body1">
-              <li></li>
-            </ul>
-            <p class="paper-font-title">
-              Fenômenos de Transporte
-            </p>
-            <div class="paper-font-title">
-              Referências
-            </div>
-            <ul class="paper-font-body1">
-              <li>Ganesh Visavale, Ph.D <a href="https://www.linkedin.com/pulse/20140701065749-58050580-career-path-to-cfd-engineer">artigo</a> no linkedin.</li>
-            </ul>
-        </paper-material>
+
         <paper-material animated="true" elevation="1" class="card">
           <div id="disqus_thread"></div>
         </paper-material>
