@@ -1,0 +1,114 @@
+
+<!-- Custom element declaration -->
+<dom-module id="cfd-post">
+    <template>
+        <style>
+            .item{
+                padding: 5px;
+                background: white;
+            }
+
+            paper-material{
+                box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.3);
+                margin: 10px 10px 0px 10px;
+                color: #373b50;
+            }
+
+            paper-material:hover{
+              @apply(--shadow-elevation-4dp);
+            }
+
+
+            .telefone{
+                font-size: 70%;
+            }
+
+            .funcao{
+                margin: 15px 20px 5px 10px;
+                font-size: 80%;
+                vertical-align: middle;
+            }
+
+            .avatar{
+                width: 40px;
+                height: 40px;
+
+                margin-left: 5px;
+                margin-right: 10px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+            }
+
+            .flex-horizontal {
+                @apply(--layout-horizontal);
+            }
+
+            .flexchild {
+                @apply(--layout-flex);
+            }
+
+            .name{
+              vertical-align: top;
+            }
+
+        </style>
+
+            <paper-item class="item flex-horizontal">
+                <img class="avatar" src="[[foto]]">
+                <paper-item-body two-line class="name flexchild">
+                  [[nome]]
+                </paper-item-body>
+
+                <paper-icon-button icon="fingerprint"></paper-icon-button>
+                <paper-icon-button icon="maps:local-atm"></paper-icon-button>
+                <paper-icon-button icon="perm-identity"></paper-icon-button>
+                <paper-icon-button icon="book"></paper-icon-button>
+            </paper-item>
+    </template>
+
+    <script>
+        Polymer({
+            is:"cfd-post",
+            properties:{
+                nome:{
+                    type: String,
+                    value: "Alice wonderwoods"
+                },
+                email:{
+                    type: String,
+                    value: "sample@gmail.com"
+                },
+                funcao:{
+                    type: String,
+                    value: "Programador"
+                },
+                rg:{
+                    type: String,
+                    value: ""
+                },
+                cpf:{
+                    type: String,
+                    value: ""
+                },
+
+                pis:{
+                    type: String,
+                    value: ""
+                },
+                telefone:{
+                    type: String,
+                    value: "(79) 99100-7858"
+                },
+                endereco:{
+                    type: String,
+                    value: ""
+                },
+                foto:{
+                    type: String,
+                    value:""
+                }
+            }
+        });
+    </script>
+</dom-module>

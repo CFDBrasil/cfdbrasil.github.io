@@ -1,0 +1,26 @@
+{
+  "name": "Site CFD Brasil",
+  "authors": [
+    "Rafael Cabral de Moura <rafael.xuxubelez@gmail.com>"
+  ],
+  "description": "CFD Brasil web site",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "app-elements": "PolymerElements/app-elements#^0.10.0",
+    "gold-elements": "PolymerElements/gold-elements#^1.0.1",
+    "iron-elements": "PolymerElements/iron-elements#^1.0.10",
+    "molecules": "PolymerElements/molecules#^1.0.0",
+    "neon-elements": "PolymerElements/neon-elements#^1.0.0",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.7",
+    "platinum-elements": "PolymerElements/platinum-elements#^2.0.0",
+    "polymer": "GoogleWebComponents#^1.6.1",
+    "chart.js": "^2.3.0"
+  }
+}

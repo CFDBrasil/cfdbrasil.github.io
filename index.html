@@ -1,59 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>CFD Brasil</title>
-
-
-    <link rel="stylesheet" href="css/katex.min.css">
-    <script src="js/katex.min.js"></script>
-
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-
-    <header id="header">
-        <nav>
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Posts</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <main>
-        <section class="topContent">
-            <div class="articleGroup">CFD BRASIL</div>
-            <div class="articleTitle">Método das Diferenças Finitas</div>
-        </section>
-
-        <article class="blogPost">
-            <h1>Post Modelo</h1>
-            <h2>Post teste</h2>
-            <p>
-                Modelo de equação:
-            </p>
-            <div class="equation">
-                <span id="eq1" class="equationContent tex"></span>
-                <span class="equationNumber">(1)</span>
-            </div>
-
-        </article>
-    </main>
-
-    <footer>
-        &copy; CFD BRASIL, 2017
-    </footer>
-
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/headroom.min.js"></script>
-    <script src="js/d3.v4.min.js"></script>
-    <script src="js/katex.min.js"></script>
-    <script src="js/main.js"></script>
-
-</body>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+        <link rel="import" href="cfd_components/cfd-elements.html">
+        <link rel="import" href="cfd_components/cfd-app.html">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>CFDBrasil</title>
+    </head>
+    <body>
+        <cfd-app></cfd-app>
+    </body>
 </html>

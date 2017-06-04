@@ -1,0 +1,120 @@
+<!-- Custom element declaration -->
+<dom-module id="cfd-home">
+    <template>
+        <style is="custom-style">
+
+            .card{
+                margin: 20px 10px 20px 10px;
+                text-align: left;
+                background-color: white;
+                padding: 30px 50px 40px 50px;
+            }
+
+            paper-material:hover{
+              @apply(--shadow-elevation-4dp);
+            }
+
+            ul li{
+              list-style: none;
+            }
+            .paper-font-display4 { @apply --paper-font-display4; }
+            .paper-font-display3 { @apply --paper-font-display3; }
+            .paper-font-display2 { @apply --paper-font-display2; }
+            .paper-font-display1 { @apply --paper-font-display1; }
+            .paper-font-headline { @apply --paper-font-headline; }
+            .paper-font-title { @apply --paper-font-title; }
+            .paper-font-subhead {  @apply --paper-font-subhead; }
+            .paper-font-body2 { @apply --paper-font-body2; }
+            .paper-font-body1 { @apply --paper-font-body1; }
+            .paper-font-caption { @apply --paper-font-caption; }
+            .paper-font-menu { @apply --paper-font-menu; }
+            .paper-font-button { @apply --paper-font-button; }
+            /*
+            p.paper-font-title::before{
+                content: "";
+                font-family: FontAwesome;
+                color: rgba(51, 53, 56, 0.1);
+                transition: color 100ms ease-out;
+            }
+
+            p.paper-font-title:hover:before{
+                content: "";
+                font-family: FontAwesome;
+                color: black;
+                transition: color 100ms ease-out;
+            }
+            */
+            p{
+                text-align: justify;
+            }
+
+        </style>
+
+        <paper-material animated="true" elevation="1" class="card">
+            <div class="paper-font-display1">
+              Nota inicial
+            </div>
+            <p class="paper-font-body1">
+              O site ainda está em construção. Ainda estou criando o roteiro e resolvendo
+              agumas partes da interface. Em breve espero ter uma plataforma inicial
+              para desenvolver nosso projeto.
+            </p>
+        </paper-material>
+        <paper-material animated="true" elevation="1" class="card">
+            <div class="paper-font-display1">
+              Roteiro
+            </div>
+            <p class="paper-font-title">
+              Fundamentos
+            </p>
+            <ul class="paper-font-body1">
+              <li>Programação científica com Python</li>
+              <li>Sistemas de controle de versão</li>
+              <li>Desenvolvimento orientado por testes TDD</li>
+            </ul>
+            <p class="paper-font-title">
+              Métodos Numéricos
+            </p>
+            <ul class="paper-font-body1">
+              <li></li>
+            </ul>
+            <p class="paper-font-title">
+              Transferência de Calor
+            </p>
+            <ul class="paper-font-body1">
+              <li></li>
+            </ul>
+            <p class="paper-font-title">
+              Termodinâmica
+            </p>
+            <ul class="paper-font-body1">
+              <li></li>
+            </ul>
+            <p class="paper-font-title">
+              Dinâmica dos Fluidos
+            </p>
+            <ul class="paper-font-body1">
+              <li></li>
+            </ul>
+            <p class="paper-font-title">
+              Fenômenos de Transporte
+            </p>
+            <div class="paper-font-title">
+              Referências
+            </div>
+            <ul class="paper-font-body1">
+              <li>Ganesh Visavale, Ph.D <a href="https://www.linkedin.com/pulse/20140701065749-58050580-career-path-to-cfd-engineer">artigo</a> no linkedin.</li>
+            </ul>
+        </paper-material>
+
+    </template>
+
+    <script>
+        Polymer({
+            is:"cfd-home",
+            properties:{
+
+            }
+        });
+    </script>
+</dom-module>

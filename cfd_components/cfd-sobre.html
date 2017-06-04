@@ -1,0 +1,82 @@
+<!-- Custom element declaration -->
+<dom-module id="cfd-sobre">
+    <template>
+        <style is="custom-style">
+
+            .card{
+                margin: 20px 10px 20px 10px;
+                text-align: left;
+                background-color: white;
+                padding: 30px 50px 40px 50px;
+            }
+
+            paper-material:hover{
+              @apply(--shadow-elevation-4dp);
+            }
+
+            ul li{
+              list-style: none;
+            }
+            .paper-font-display4 { @apply --paper-font-display4; }
+            .paper-font-display3 { @apply --paper-font-display3; }
+            .paper-font-display2 { @apply --paper-font-display2; }
+            .paper-font-display1 { @apply --paper-font-display1; }
+            .paper-font-headline { @apply --paper-font-headline; }
+            .paper-font-title { @apply --paper-font-title; }
+            .paper-font-subhead {  @apply --paper-font-subhead; }
+            .paper-font-body2 { @apply --paper-font-body2; }
+            .paper-font-body1 { @apply --paper-font-body1; }
+            .paper-font-caption { @apply --paper-font-caption; }
+            .paper-font-menu { @apply --paper-font-menu; }
+            .paper-font-button { @apply --paper-font-button; }
+            /*
+            p.paper-font-title::before{
+                content: "";
+                font-family: FontAwesome;
+                color: rgba(51, 53, 56, 0.1);
+                transition: color 100ms ease-out;
+            }
+
+            p.paper-font-title:hover:before{
+                content: "";
+                font-family: FontAwesome;
+                color: black;
+                transition: color 100ms ease-out;
+            }
+            */
+            p{
+                margin-bottom: 20px;
+                text-align: justify;
+            }
+
+        </style>
+
+        <paper-material animated="true" elevation="1" class="card">
+            <div class="paper-font-display1">
+              O projeto
+            </div>
+            <p class="paper-font-body1">
+              Bem vindos ao CFD Brasil! A ideia desse site/repositório é reunir os conceitos
+              da disciplina e implementações em uma base compartilhada e aberta. Cada tópico será
+              abordado em um post. Tentaremos criar aqui uma fonte de estudos colaborativa.
+            </p>
+
+            <p class="paper-font-body1">
+              Qualquer ajuda com correções, implementações de algorítimos e artigos
+              será muito bem vinda. Para informar um erro usem o <a href="https://github.com/CFDBrasil/cfdbrasil.github.io/issues">repositório</a> do site
+              no GitHub. Para participar do projeto basta criar uma conta
+              no GitHub e solicitar participação na nossa <a href="https://github.com/CFDBrasil">organização</a>.
+            </p>
+        </paper-material>
+
+    </template>
+
+    <script>
+        Polymer({
+            is:"cfd-sobre",
+            properties:{
+
+            }
+        });
+    </script>
+</dom-module>

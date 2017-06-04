@@ -1,0 +1,187 @@
+<!-- Custom element declaration -->
+<dom-module id="cfd-app">
+    <template>
+        <style is="custom-style">
+            :host{
+              font-family: 'Roboto Thin', 'Open Sans', sans-serif;
+              line-height: 1.5;
+              min-height: 100vh;
+
+              --paper-tabs-selection-bar-color: #ffffff;
+            }
+
+            paper-drawer-panel{
+                background-color: #f1f1f1;
+            }
+            paper-toggle-button.view-mode {
+              --paper-toggle-button-checked-bar-color:  white;
+              --paper-toggle-button-checked-button-color:  white;
+              --paper-toggle-button-checked-ink-color: white;
+              --paper-toggle-button-unchecked-bar-color:  white;
+              --paper-toggle-button-unchecked-button-color:  white;
+              --paper-toggle-button-unchecked-ink-color: white;
+            }
+
+            paper-item iron-icon{
+                margin-right: 10px;
+            }
+
+            .paper-header{
+                background-color: var(--paper-toolbar-background);
+            }
+
+            paper-header-panel{
+                background-color:  var(--paper-menu-background-color);
+            }
+
+            paper-header-panel{
+                  min-height: 100vh;
+            }
+
+            paper-input.fit {
+              --paper-input-container-color: #373b50;
+              --paper-input-container-focus-color: var(--paper-pink-300);
+              --paper-input-container-invalid-color: var(--paper-pink-500);
+              --paper-input-container-input-color: #373b50;
+              margin-top: 5px;
+            }
+
+            paper-tabs{
+              background-color: var(--paper-toolbar-background-color);
+              height: 63px;
+              margin-right: 20px;
+            }
+
+            .content{
+                max-width: 41em;
+                margin: auto;
+                margin-top: 30px;
+            }
+
+            .title{
+              margin-left: 0px !important;
+              height: 30px !important;
+              text-align: left;
+              margin-bottom: -10px;
+            }
+
+            .header{
+              @apply(--paper-font-headline);
+            }
+
+            paper-item iron-icon{
+                margin-right: 20px;
+                margin-left: 5px;
+            }
+
+            paper-item{
+                transition: border-left-width 0.1s ease-in-out;
+                transition: color 0.1s ease-in-out;
+                transition: font-size 0.1s ease-in-out;
+            }
+
+            paper-item:hover{
+              color: var(--paper-blue-500);
+              font-size: 110%;
+              cursor: pointer;
+            }
+            .separator{
+                border-top-width: 1px;
+                border-top-color: lightgray;
+                border-top-style: solid;
+                margin: 10px 20px 10px 20px;
+            }
+            .logo{
+              height: 25px;
+              margin-right: 10px;
+              border-radius: 3px;
+              display: inline-block;
+            }
+
+
+            @media (max-width: 1080px)
+            {
+              paper-tabs{
+                margin: auto;
+                height: 56px;
+                visibility: collapse;
+                position: absolute;
+              }
+            }
+        </style>
+
+
+        <paper-drawer-panel left-drawer force-narrow>
+            <paper-header-panel drawer>
+                    <paper-toolbar class="medium">
+
+                      <img class="logo" src="../logo.png">
+                      <span class="title"> CFD Brasil</span>
+                    </paper-toolbar>
+                    <paper-menu class="list" selected="{{page}}">
+                        <paper-item><iron-icon icon="home"></iron-icon>Home</paper-item>
+                        <paper-item><iron-icon icon="view-list"></iron-icon>Posts</paper-item>
+                        <paper-item><iron-icon icon="info-outline"></iron-icon>Sobre</paper-item>
+                    </paper-menu>
+            </paper-header-panel>
+            <paper-header-panel class="mainHeader" main>
+
+              <div class="paper-header">
+                <paper-toolbar class="medium">
+                    <paper-icon-button class="sanduba" icon="menu" paper-drawer-toggle></paper-icon-button>
+
+                    <span class="title">
+                      <iron-pages role="main" selected="{{page}}">
+                        <span>Home</span>
+                        <span>Posts</span>
+                        <span>Sobre</span>
+                      </iron-pages>
+                    </span>
+
+                    <paper-tabs selected="{{page}}" class="right" noink>
+                      <paper-tab>Home</paper-tab>
+                      <paper-tab>Posts</paper-tab>
+                      <paper-tab>Sobre</paper-tab>
+                    </paper-tabs>
+
+                    <paper-icon-button icon="search" onclick="modal.open()"></paper-icon-button>
+                </paper-toolbar>
+              </div>
+
+
+              <div class="content fit">
+                  <iron-pages role="main" selected="{{page}}">
+                    <cfd-home></cfd-home>
+                    <cfd-posts></cfd-posts>
+                    <cfd-sobre></cfd-sobre>
+                  </iron-pages>
+              </div>
+
+              <paper-dialog id="modal" modal>
+                <paper-input class="fit" label="Pesquisar" on-keydown="checkForEnter" autofocus>
+                  <iron-icon icon="search" prefix></iron-icon>
+                </paper-input>
+              </paper-dialog>
+            </paper-header-panel>
+        </paper-drawer-panel>
+
+    </template>
+
+    <script>
+        Polymer({
+            is:"cfd-app",
+            properties:{
+                page: {
+                    type: Number,
+                    value: 0
+                }
+            },
+            checkForEnter: function (e) {
+                if (e.keyCode === 13) {
+                    modal.close();
+                    // Realiza busca do modal
+                }
+            }
+        });
+    </script>
+</dom-module>
