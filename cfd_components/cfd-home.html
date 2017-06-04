@@ -106,7 +106,9 @@
               <li>Ganesh Visavale, Ph.D <a href="https://www.linkedin.com/pulse/20140701065749-58050580-career-path-to-cfd-engineer">artigo</a> no linkedin.</li>
             </ul>
         </paper-material>
-
+        <paper-material animated="true" elevation="1" class="card">
+          <div id="disqus_thread"></div>
+        </paper-material>
     </template>
 
     <script>
@@ -114,6 +116,19 @@
             is:"cfd-home",
             properties:{
 
+            },
+            ready: function(){
+              var disqus_config = function () {
+                this.page.url = "https://cfdbrasil.github.io/";
+                this.page.identifier = "cfdbrasil-github-io.disqus.com";
+              };
+
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://cfdbrasil-github-io.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
             }
         });
     </script>
