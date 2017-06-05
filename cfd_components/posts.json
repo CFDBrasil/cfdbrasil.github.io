@@ -2,7 +2,7 @@
   "posts":[
     {
       "titulo":"Classificação das EDP's",
-      "cor":"blue",
+      "cor":"teal",
       "rotulo":"M",
       "status":"error-outline"
     },
@@ -14,14 +14,44 @@
     },
     {
       "titulo":"Modelos de fluxo",
-      "cor":"blue",
+      "cor":"teal",
       "rotulo":"M",
       "status":"error-outline"
     },
     {
       "titulo":"Propriedades das soluções numéricas",
-      "cor":"blue",
+      "cor":"teal",
       "rotulo":"M",
+      "status":"error-outline"
+    },
+    {
+      "titulo":"Solução da equação de Euler",
+      "cor":"orange",
+      "rotulo":"N",
+      "status":"error-outline"
+    },
+    {
+      "titulo":"Formas das equações governantes",
+      "cor":"teal",
+      "rotulo":"M",
+      "status":"error-outline"
+    },
+    {
+      "titulo":"Solução da equação de Poisson",
+      "cor":"orange",
+      "rotulo":"N",
+      "status":"error-outline"
+    },
+    {
+      "titulo":"Solução das equações de Navier-Stokes",
+      "cor":"orange",
+      "rotulo":"N",
+      "status":"error-outline"
+    },
+    {
+      "titulo":"Solução da equação de Boltzman",
+      "cor":"orange",
+      "rotulo":"N",
       "status":"error-outline"
     },
     {
