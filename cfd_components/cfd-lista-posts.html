@@ -8,20 +8,67 @@
             }
 
             iron-list {
-              margin-bottom: 20px;
+              margin-bottom: 100px;
             }
+
+            .group-header {
+              font-weight: bold;
+              color: #333;
+              margin: 20px 10px 20px 20px;
+            }
+
         </style>
         <iron-ajax auto url="./posts.json" handle-as="json" last-response="{{ajaxResponse}}" auto></iron-ajax>
 
-        <iron-list items="{{ajaxResponse.posts}}" role="list" as="item">
-            <template>
-                <cfd-post titulo="[[item.titulo]]" status="[[item.status]]" cor$="[[item.cor]]" rotulo="[[item.rotulo]]"></cfd-post>
-            </template>
+        <iron-list id="lista" items="[[_generateGroupsFor(ajaxResponse.posts)]]" scroll-target="document">
+          <template>
+            <div>
+              <div class="group-header" hidden$="[[!_isHeader(index)]]">[[item.rotulo]]</div>
+              <cfd-post class="group-item" on-click="openPost" titulo="[[item.titulo]]" status="[[item.status]]" cor$="[[item.cor]]" rotulo="[[index]]"></cfd-post>
+            </div>
+          </template>
         </iron-list>
     </template>
     <script>
         Polymer({
-            is:"cfd-lista-posts"
+            is:"cfd-lista-posts",
+            properties:{
+              filtro:{
+                type: String,
+                value:""
+              },
+              ajaxResponse:{
+                type: Object
+              }
+            },
+            observers:[
+              'filtrar(filtro,ajaxResponse)'
+            ],
+            filtrar: function(filtro,resposta){
+              let posts = resposta.posts;
+              for (var i = 0; i < posts.length; i++) {
+                //console.log(posts[i].titulo);
+              }
+            },
+            openPost: function(e){
+              //console.log(e);
+            },
+            _generateGroupsFor: function(items) {
+              var items = items.slice().sort(function(a, b) {
+                return a.rotulo.toString().localeCompare(b.rotulo);
+              });
+              return items;
+            },
+            _isHeader: function(idx,lista) {
+              if(idx==0){
+                return true;
+              } else if(this.$.lista.items[idx].rotulo!=this.$.lista.items[idx-1].rotulo){
+                return true;
+              } else {
+                return false;
+              }
+            }
+
         });
     </script>
 </dom-module>

@@ -3,61 +3,61 @@
     {
       "titulo":"Classificação das EDP's",
       "cor":"teal",
-      "rotulo":"M",
+      "rotulo":"Conceitos Matemáticos",
       "status":"error-outline"
     },
     {
       "titulo":"Análise de Estabilidade",
       "cor":"orange",
-      "rotulo":"N",
+      "rotulo":"Métodos Numéricos",
       "status":"error-outline"
     },
     {
       "titulo":"Modelos de fluxo",
       "cor":"teal",
-      "rotulo":"M",
+      "rotulo":"Conceitos Matemáticos",
       "status":"error-outline"
     },
     {
       "titulo":"Propriedades das soluções numéricas",
       "cor":"teal",
-      "rotulo":"M",
+      "rotulo":"Conceitos Matemáticos",
       "status":"error-outline"
     },
     {
       "titulo":"Solução da equação de Euler",
       "cor":"orange",
-      "rotulo":"N",
+      "rotulo":"Métodos Numéricos",
       "status":"error-outline"
     },
     {
       "titulo":"Formas das equações governantes",
       "cor":"teal",
-      "rotulo":"M",
+      "rotulo":"Conceitos Matemáticos",
       "status":"error-outline"
     },
     {
       "titulo":"Solução da equação de Poisson",
       "cor":"orange",
-      "rotulo":"N",
+      "rotulo":"Métodos Numéricos",
       "status":"error-outline"
     },
     {
       "titulo":"Solução das equações de Navier-Stokes",
       "cor":"orange",
-      "rotulo":"N",
+      "rotulo":"Métodos Numéricos",
       "status":"error-outline"
     },
     {
       "titulo":"Solução da equação de Boltzman",
       "cor":"orange",
-      "rotulo":"N",
+      "rotulo":"Métodos Numéricos",
       "status":"error-outline"
     },
     {
       "titulo":"Solução da equação de Euler",
       "cor":"orange",
-      "rotulo":"N",
+      "rotulo":"Métodos Numéricos",
       "status":"error-outline"
     }
   ]

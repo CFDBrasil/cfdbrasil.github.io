@@ -1,0 +1,62 @@
+<!-- Custom element declaration -->
+<dom-module id="cfd-post-view">
+    <template>
+        <style is="custom-style">
+            :host{
+              font-family: 'Open Sans', sans-serif;
+              line-height: 1.5;
+              min-height: 100vh;
+            }
+
+            .paper-header{
+                background-color: var(--paper-toolbar-background);
+            }
+
+            paper-header-panel{
+                background-color:  var(--paper-menu-background-color);
+            }
+
+            paper-header-panel{
+                  min-height: 100vh;
+            }
+
+
+            .content{
+                max-width: 41em;
+                margin: auto;
+                margin-top: 30px;
+            }
+
+            .header{
+              @apply(--paper-font-headline);
+            }
+
+        </style>
+
+
+        <paper-drawer-panel left-drawer force-narrow>
+            <paper-header-panel class="mainHeader" main>
+
+              <div class="paper-header">
+                <paper-toolbar class="medium" cover>
+
+
+                </paper-toolbar>
+              </div>
+
+
+              <div class="content fit">
+                <cfd-home></cfd-home>
+              </div>
+
+            </paper-header-panel>
+        </paper-drawer-panel>
+
+    </template>
+
+    <script>
+        Polymer({
+            is:"cfd-post-view"
+        });
+    </script>
+</dom-module>
