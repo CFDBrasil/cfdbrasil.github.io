@@ -119,8 +119,8 @@
                       <span class="title"> CFD Brasil</span>
                     </paper-toolbar>
                     <paper-menu class="list" selected="{{page}}">
-                        <paper-item><iron-icon icon="home"></iron-icon>Home</paper-item>
-                        <paper-item><iron-icon icon="view-list"></iron-icon>Posts</paper-item>
+                        <paper-item><iron-icon icon="home"></iron-icon>Início</paper-item>
+                        <paper-item><iron-icon icon="view-list"></iron-icon>Tópicos</paper-item>
                         <paper-item><iron-icon icon="info-outline"></iron-icon>Sobre</paper-item>
                     </paper-menu>
             </paper-header-panel>
@@ -132,15 +132,15 @@
 
                     <span class="title">
                       <iron-pages role="main" selected="{{page}}">
-                        <span>Home</span>
-                        <span>Posts</span>
+                        <span>Início</span>
+                        <span>Tópicos</span>
                         <span>Sobre</span>
                       </iron-pages>
                     </span>
 
                     <paper-tabs selected="{{page}}" class="right" noink>
-                      <paper-tab>Home</paper-tab>
-                      <paper-tab>Posts</paper-tab>
+                      <paper-tab>Início</paper-tab>
+                      <paper-tab>Tópicos</paper-tab>
                       <paper-tab>Sobre</paper-tab>
                     </paper-tabs>
 
@@ -152,7 +152,7 @@
               <div class="content fit">
                   <iron-pages role="main" selected="{{page}}">
                     <cfd-home></cfd-home>
-                    <cfd-posts></cfd-posts>
+                    <cfd-lista-posts></cfd-lista-posts>
                     <cfd-sobre></cfd-sobre>
                   </iron-pages>
               </div>

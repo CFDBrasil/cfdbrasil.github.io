@@ -2,41 +2,26 @@
 <!-- Custom element declaration -->
 <dom-module id="cfd-lista-posts">
     <template>
-        <style>
+        <style is="custom-style">
             :host{
-                display: block;
                 margin-top: 40px;
             }
+
             iron-list {
               height: 100vh;
             }
-
-            paper-material:hover{
-              @apply(--shadow-elevation-4dp);
-            }
-
-            paper-material{
-              background-color: white;
-              padding: 20px 20px 0px 20px;
-            }
         </style>
-        <paper-material animated="true"  elevation="1">
-            <iron-list items=[[items]] role="list">
-                <template>
-                    <cfd-post nome="[[item.nome]]" telefone="[[item.telefone]]" funcao="[[item.funcao]]" foto="[[item.foto]]"></cfd-post>
-                </template>
-            </iron-list>
-        </paper-material>
+        <iron-ajax auto url="./posts.json" handle-as="json" last-response="{{ajaxResponse}}" auto></iron-ajax>
+
+        <iron-list items="{{ajaxResponse.posts}}" role="list" as="item">
+            <template>
+                <cfd-post titulo="[[item.titulo]]" status="[[item.status]]" cor$="[[item.cor]]" rotulo="[[item.rotulo]]"></cfd-post>
+            </template>
+        </iron-list>
     </template>
     <script>
         Polymer({
-            is:"cfd-lista-posts",
-            properties: {
-                items:{
-                    type: Array,
-                    value: []
-                }
-            }
+            is:"cfd-lista-posts"
         });
     </script>
 </dom-module>

@@ -1,28 +1,16 @@
-{"posts":[
+{
+  "posts":[
     {
-      "titulo":"teste",
-      "categorias":["fvm","fdm","fundamentos"],
-      "pubicado":"false",
-      "post":[
-        {
-          "texto":"",
-          "equacao":"",
-          "imagem":"",
-          "codigo":""
-        }
-      ]
+      "titulo":"Classificação da EDP's",
+      "cor":"blue",
+      "rotulo":"M",
+      "status":"error-outline"
     },
     {
-      "titulo":"teste",
-      "categorias":["fvm","fdm","fundamentos"],
-      "pubicado":"false",
-      "post":[
-        {
-          "texto":"",
-          "equacao":"",
-          "imagem":"",
-          "codigo":""
-        }
-      ]
+      "titulo":"Critérios de Estabilidade",
+      "cor":"orange",
+      "rotulo":"N",
+      "status":"error-outline"
     }
-]}
+  ]
+}
