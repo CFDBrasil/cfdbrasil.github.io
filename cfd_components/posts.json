@@ -59,6 +59,18 @@
       "cor":"orange",
       "rotulo":"Métodos Numéricos",
       "status":"error-outline"
+    },
+    {
+      "titulo":"Sistemas de controle de versão",
+      "cor":"pink",
+      "rotulo":"Desenvolvimento de Software",
+      "status":"error-outline"
+    },
+    {
+      "titulo":"Desenvolvimento orientado a testes",
+      "cor":"pink",
+      "rotulo":"Desenvolvimento de Software",
+      "status":"error-outline"
     }
   ]
 }
