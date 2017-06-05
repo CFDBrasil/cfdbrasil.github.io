@@ -7,8 +7,26 @@
       "status":"error-outline"
     },
     {
-      "titulo":"Critérios de Estabilidade",
+      "titulo":"Análise de Estabilidade",
       "cor":"orange",
+      "rotulo":"N",
+      "status":"error-outline"
+    },
+    {
+      "titulo":"Modelos de fluxo",
+      "cor":"teal",
+      "rotulo":"M",
+      "status":"error-outline"
+    },
+    {
+      "titulo":"Propriedades das soluções numéricas",
+      "cor":"pink",
+      "rotulo":"M",
+      "status":"error-outline"
+    },
+    {
+      "titulo":"Solução da equação de Euler",
+      "cor":"brown",
       "rotulo":"N",
       "status":"error-outline"
     }
