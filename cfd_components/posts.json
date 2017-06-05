@@ -1,7 +1,7 @@
 {
   "posts":[
     {
-      "titulo":"Classificação da EDP's",
+      "titulo":"Classificação das EDP's",
       "cor":"blue",
       "rotulo":"M",
       "status":"error-outline"
@@ -14,19 +14,19 @@
     },
     {
       "titulo":"Modelos de fluxo",
-      "cor":"teal",
+      "cor":"blue",
       "rotulo":"M",
       "status":"error-outline"
     },
     {
       "titulo":"Propriedades das soluções numéricas",
-      "cor":"pink",
+      "cor":"blue",
       "rotulo":"M",
       "status":"error-outline"
     },
     {
       "titulo":"Solução da equação de Euler",
-      "cor":"brown",
+      "cor":"orange",
       "rotulo":"N",
       "status":"error-outline"
     }
