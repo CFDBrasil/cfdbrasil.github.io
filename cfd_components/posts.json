@@ -4,73 +4,78 @@
       "titulo":"Classificação das EDP's",
       "cor":"teal",
       "rotulo":"Conceitos Matemáticos",
-      "status":"error-outline"
+      "status":"error-outline",
+      "icone":"extension"
     },
     {
       "titulo":"Análise de Estabilidade",
       "cor":"orange",
       "rotulo":"Métodos Numéricos",
-      "status":"error-outline"
+      "status":"error-outline",
+      "icone":"hardware:computer"
     },
     {
       "titulo":"Modelos de fluxo",
       "cor":"teal",
       "rotulo":"Conceitos Matemáticos",
-      "status":"error-outline"
+      "status":"error-outline",
+      "icone":"extension"
     },
     {
       "titulo":"Propriedades das soluções numéricas",
       "cor":"teal",
       "rotulo":"Conceitos Matemáticos",
-      "status":"error-outline"
+      "status":"error-outline",
+      "icone":"extension"
     },
     {
       "titulo":"Solução da equação de Euler",
       "cor":"orange",
       "rotulo":"Métodos Numéricos",
-      "status":"error-outline"
+      "status":"error-outline",
+      "icone":"hardware:computer"
     },
     {
       "titulo":"Formas das equações governantes",
       "cor":"teal",
       "rotulo":"Conceitos Matemáticos",
-      "status":"error-outline"
+      "status":"error-outline",
+      "icone":"extension"
     },
     {
       "titulo":"Solução da equação de Poisson",
       "cor":"orange",
       "rotulo":"Métodos Numéricos",
-      "status":"error-outline"
+      "status":"error-outline",
+      "icone":"hardware:computer"
     },
     {
       "titulo":"Solução das equações de Navier-Stokes",
       "cor":"orange",
       "rotulo":"Métodos Numéricos",
-      "status":"error-outline"
+      "status":"error-outline",
+      "icone":"hardware:computer"
     },
     {
       "titulo":"Solução da equação de Boltzman",
       "cor":"orange",
       "rotulo":"Métodos Numéricos",
-      "status":"error-outline"
-    },
-    {
-      "titulo":"Solução da equação de Euler",
-      "cor":"orange",
-      "rotulo":"Métodos Numéricos",
-      "status":"error-outline"
+      "status":"error-outline",
+      "icone":"hardware:computer"
     },
     {
       "titulo":"Sistemas de controle de versão",
       "cor":"pink",
       "rotulo":"Desenvolvimento de Software",
-      "status":"error-outline"
+      "status":"error-outline",
+      "icone":"build"
     },
     {
       "titulo":"Desenvolvimento orientado a testes",
       "cor":"pink",
       "rotulo":"Desenvolvimento de Software",
-      "status":"error-outline"
+      "status":"error-outline",
+      "icone":"build"
     }
   ]
 }
