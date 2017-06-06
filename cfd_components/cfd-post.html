@@ -69,6 +69,9 @@
                 margin-right: 10px;
                 margin-left: 5px;
             }
+            .status-icon{
+              margin-right: 10px;
+            }
         </style>
 
 
@@ -79,11 +82,8 @@
                   [[titulo]]
                 </paper-item-body>
 
-                <paper-icon-button id="[[status]]" icon="[[status]]" ></paper-icon-button>
+                <iron-icon class="status-icon" id="[[status]]" icon="[[status]]" ></iron-icon>
             </paper-item>
-            <paper-tooltip for="error-outline" position="left" offset="0"> Não publicado </paper-tooltip>
-            <paper-tooltip for="open-in-new" position="left" offset="0"> Publicado </paper-tooltip>
-            <paper-tooltip for="create" position="left" offset="0"> Em edição </paper-tooltip>
           </paper-material>
     </template>
 

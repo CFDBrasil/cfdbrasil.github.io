@@ -29,11 +29,12 @@
       "icone":"extension"
     },
     {
-      "titulo":"Solução da equação de Euler",
+      "titulo":"Equação de Euler 1D FTBS (Upwind)",
       "cor":"orange",
       "rotulo":"Métodos Numéricos",
-      "status":"error-outline",
-      "icone":"hardware:computer"
+      "status":"create",
+      "icone":"hardware:computer",
+      "arquivo":"https://github.com/CFDBrasil/DiferencasFinitas/blob/master/EULER_FTBS.ipynb"
     },
     {
       "titulo":"Formas das equações governantes",
